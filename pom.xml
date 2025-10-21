@@ -890,7 +890,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>3.9.0</version>
                     <configuration>
                         <usedDependencies>
                             <dependency>com.sun.jersey:jersey-servlet</dependency>
@@ -942,12 +942,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.6.1</version>
+                <version>3.6.2</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>extra-enforcer-rules</artifactId>
-                        <version>1.10.0</version>
+                        <version>1.11.0</version>
                     </dependency>
                 </dependencies>
                 <executions>
@@ -1005,7 +1005,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.27.0</version>
+                <version>3.28.0</version>
             </plugin>
 
             <plugin>
@@ -1053,7 +1053,7 @@
             <plugin>
                 <groupId>org.codehaus.cargo</groupId>
                 <artifactId>cargo-maven3-plugin</artifactId>
-                <version>1.10.22</version>
+                <version>1.10.24</version>
             </plugin>
 
             <plugin>
@@ -1249,8 +1249,8 @@
         <version.fluido>2.1.0</version.fluido>
         <!-- hibernate is up to rev 6+. But 4.0.0. causes this error: symbol: org.hibernate.classic.Session not found -->
         <version.hibernate>3.6.10.Final</version.hibernate>
-        <version.spotbugs.maven>4.9.6.0</version.spotbugs.maven>
-        <version.spotbugs>4.9.6</version.spotbugs>
+        <version.spotbugs.maven>4.9.8.1</version.spotbugs.maven>
+        <version.spotbugs>4.9.8</version.spotbugs>
         <!-- Spring 6.x requires Java 17 -->
         <version.springframework>5.3.39</version.springframework>
         <!-- Tomcat 10 moves from Java EE to Jakarta EE, moving packages javax.* to jakarta.* - code changes likely required to address this change. -->
